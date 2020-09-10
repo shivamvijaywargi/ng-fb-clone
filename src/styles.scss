@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* 
+  * (10/16)*100=62.5% - Using 10 to easily use rem units as 1 rem == 10px 
+  * 16 because default font-size is 16px
+  * COnverting it to % so that if user has increased font-size in the browser
+  * then it doesn't affect it
+  */
+  font-size: 62.5%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+// Global Variables
+
+/* BUTTONS */
+$primary-button-color: #1877f2;
+$success-button-color: #42b72a;
+
+/* OTHER COLORS */
+$header-color: white;
+$body-color: #f0f2f5;

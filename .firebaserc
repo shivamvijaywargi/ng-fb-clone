@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "fb-clone-216b3": {
+      "hosting": {
+        "facebook-clone": [
+          "fb-clone-216b3"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+<div class="login-container">
+  <header class="login__header">
+    <div class="login__header__left">
+      <img src="../../../assets/fb-logo-1.jpg" alt="FB Logo" />
+      <h2>
+        Facebook helps you connect and share with the people in your life.
+      </h2>
+    </div>
+
+    <div class="login__header__right">
+      <mat-card class="login__header__right__card">
+        <mat-card-content class="login__header__right__card__content">
+          <form class="login-form" #form="ngForm" (ngSubmit)="login(form)">
+            <input
+              type="text"
+              name="email"
+              ngModel
+              placeholder="Enter your email"
+            />
+            <input
+              type="password"
+              name="password"
+              ngModel
+              placeholder="Password"
+            />
+
+            <button
+              type="submit"
+              class="login-button"
+              [disabled]="form.invalid || form.pending"
+            >
+              Log In
+            </button>
+          </form>
+
+          <a href="#">Forgotten account?</a>
+
+          <button class="create-account" (click)="openRegister()">
+            Create New Account
+          </button>
+        </mat-card-content>
+      </mat-card>
+
+      <p class="tagline">
+        <a href="#">Create a Page</a>
+        for a celebrity, band or business.
+      </p>
+    </div>
+  </header>
+
+  <footer class="login__footer">
+    Cloned with ❤️ by &nbsp;
+    <a href="https://github.com/shivamvijaywargi"
+      ><strong> Shivam Vijaywargi</strong></a
+    >
+  </footer>
+</div>
